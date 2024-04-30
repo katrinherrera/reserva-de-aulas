@@ -1,4 +1,3 @@
-
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
@@ -13,7 +12,9 @@ const firebaseConfig = {
   measurementId: "G-84F1QE29TB"
 };
 
-// Initialize Firebase
+// Inicializa Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-export const db = getFirestore (app);
+const db = getFirestore(app); // Guarda la instancia de Firestore en una variable llamada 'db'
+
+export { db }; // Exporta la instancia de Firestore para que esté disponible para otros archivos

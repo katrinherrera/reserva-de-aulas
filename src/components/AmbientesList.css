@@ -1,0 +1,51 @@
+.ambientes-list-container {
+    padding: 20px;
+  }
+  
+  .ambientes-list-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .ambientes-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ambiente-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .ambiente-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .ambiente-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ambiente-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .ambiente-location {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .ambiente-capacity {
+    font-size: 14px;
+    color: #666;
+  }
+  
