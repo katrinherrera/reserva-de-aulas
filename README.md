@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# Reserva de Aulas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación para gestionar la reserva de aulas en una institución educativa. Proporciona una interfaz intuitiva para que los usuarios puedan ver la disponibilidad de las aulas, realizar reservas y administrar sus reservas existentes.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Visualización de la disponibilidad de las aulas en tiempo real.
+- Capacidad para realizar reservas de aulas de manera sencilla.
+- Gestión de reservas existentes, incluida la cancelación y modificación.
+- Registro de usuarios con autenticación segura.
+- Administración de roles de usuario para controlar el acceso a las funcionalidades.
 
-## Expanding the ESLint configuration
+## Tecnologías Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Este proyecto está construido utilizando las siguientes tecnologías:
 
-- Configure the top-level `parserOptions` property like this:
+- Frontend:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+  - React.js
+  - TypeScript
+  - Vite
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Backend:
+  - Node.js
+  - Express
+  - MongoDB (o cualquier base de datos de tu elección)
+
+## Configuración del Proyecto
+
+Para ejecutar este proyecto localmente, sigue estos pasos:
+
+1. Clona este repositorio en tu máquina local.
+2. Instala las dependencias del frontend y del backend.
+3. Configura tu base de datos y ajusta la conexión en el backend.
+4. Ejecuta el servidor backend.
+5. Ejecuta el cliente frontend.
